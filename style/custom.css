@@ -1,0 +1,60 @@
+/* Styles for testtheme */
+
+#header-wrap {
+	background-image: url([[pix:theme|gray-stripe]]);
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+
+#logo {
+	width: 40%; 
+}
+
+#logo img, #main-image img {
+	width: 100%;
+	min-width: 320px;
+	height: auto;
+}
+
+#banner-wrap {
+	background-color: #d6d5d3;
+}
+
+#page-header {
+	display: none;
+}
+
+#page-navbar {
+	display: none;
+}
+
+.navbar-fixed-top {
+	position: static !important;
+}
+
+.navbar .nav.pull-right {
+	float: left;
+	margin-left: 12px;
+}
+
+.navbar-fixed-top .navbar-inner {
+	background-color: #434343;
+	background-image: none;
+	-webkit-box-shadow: none;  
+    -moz-box-shadow: none;  
+    box-shadow: none;
+	border-width: 0;
+}
+
+.navbar-fixed-top .navbar-inner .navbar-text {
+	font-family: 'Open Sans';
+	font-weight: normal;
+	color: #fff;
+}
+
+.navbar-fixed-top .navbar-inner .navbar-text a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+}
+	

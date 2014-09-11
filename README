@@ -1,0 +1,26 @@
+README
+======
+
+INSTRUCTIONS
+------------
+This theme is a starter theme. Some files and some variables have been renamed so that it will install without problems on Moodle 2.7. You will use this theme to recreate an existing look and feel.
+
+# Install a Moodle 2.7 site on localhost. Use the latest stable release. See https://download.moodle.org/releases/latest/
+# Install the theme on the Moodle site. See https://docs.moodle.org/24/en/Installing_a_new_theme
+Remote Learner deploys custom themes from an alternative location in the moodledata directory. For bonus points you can install and develop in that location (we will test the theme from that location as well as Moodle's default theme directory). For information, search for 'themedir' in config-dist.php of the Moodle install. Moodle uses heavy caching, and you will want to use the Purge All Caches option, enable developer debugging and probably also PHP output to the page. We will check your final work for PHP errors. See Moodle.org for more inforation about these configuration options.
+# Initialize the theme as a git repository and add it to Github as a public repository. Track all changes you make with commits which clearly denote the work done and divide it into appropriate segments.
+# Make alterations as necessary to replicate the included screenshots (see /pix/screenshots).
+** The logo has been provided for you (see /pix).
+** See https://docs.moodle.org/dev/Creating_a_theme (Some of the tasks described in the documentation have already been done for you, so that the theme will install immediately.)
+** Add images, CSS, favicon, and anything else you think necessary.
+** Pay attention to theme responsiveness. Moodle has many, many different content layouts. For this project we are most concerned with the site frontpage.
+** If you decide to spend time on additional content layouts, please let us know (include navigation paths) when you submit your work so we don't miss anything. A normal theme development workflow would review numerous content layouts within the site.
+** You can certainly find this site online with enough searching. We would prefer that you not copy CSS from the existing site, and will check.
+# Monitor the developer console for failed GETs, JavaScript errors, and any other issues as you work. We will check for these when you submit your work.
+# Test your work on Moodle's supported browsers for the version. See https://docs.moodle.org/dev/Moodle_2.7_release_notes#Browser_support
+# When you are finished, perform a fresh install on a fresh Moodle site with debugging on. Address any installation errors. Uninstall the theme. Address any uninstallation errors.
+# Share your git repo with Github user 'amygroshek'.
+# Notify Page Chen that your work is complete.
+
+If you have any questions, email amy.groshek@remote-learner.net. Include page.chen@remote-learner.net.
+
