@@ -22,7 +22,7 @@
 
 $left = (!right_to_left());  // To know if to add 'pull-right' and 'desktop-first-column' classes in the layout for LTR.
 echo $OUTPUT->doctype() ?>
-<html <?php echo $OUTPUT->htmlattributes(); ?> id="pediatric">
+<html <?php echo $OUTPUT->htmlattributes(); ?> id="mabts">
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
@@ -31,6 +31,9 @@ echo $OUTPUT->doctype() ?>
     <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 
 <body <?php echo $OUTPUT->body_attributes('two-column'); ?>>
@@ -44,24 +47,24 @@ echo $OUTPUT->doctype() ?>
                     <a href="<?php echo $CFG->wwwroot;?>"><img src="<?php echo $OUTPUT->pix_url('logo', 'theme'); ?>" alt="MABTS Logo"></a>
                 </div>
             </div>
-            <nav role="navigation" class="navbar-inner">
-                <div class="navbar-wrap">
-                    <a class="btn btn-navbar" data-toggle="workaround-collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav pull-right">
-                            <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                            <li class="navbar-text"><?php echo $OUTPUT->login_info() ?></li>
-                        </ul>
-                        <div id="tabs">
-                            <?php echo $OUTPUT->custom_menu(); ?>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+			<nav role="navigation" class="navbar-inner">
+				<div class="navbar-wrap">
+					<a class="btn btn-navbar" data-toggle="workaround-collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav pull-right">
+							<li><?php echo $OUTPUT->page_heading_menu(); ?></li>
+							<li class="navbar-text"><?php echo $OUTPUT->login_info() ?></li>
+						</ul>
+						<div id="tabs">
+							<?php echo $OUTPUT->custom_menu(); ?>
+						</div>
+					</div>
+				</div>
+			</nav>
         </div>
     </header>
 
