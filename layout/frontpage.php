@@ -30,6 +30,7 @@ echo $OUTPUT->doctype() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -46,6 +47,12 @@ echo $OUTPUT->doctype() ?>
                 <div id="logo">
                     <a href="<?php echo $CFG->wwwroot;?>"><img src="<?php echo $OUTPUT->pix_url('logo', 'theme'); ?>" alt="MABTS Logo"></a>
                 </div>
+				<div id="tagline">
+					<span class="tag-orange">"...that in </span>
+					<span class="tag-gray">all things </span>
+					<span class="tag-orange">He may have the preeminence." </span>
+					<span class="tag-gray">Col 1:18</span>
+				</div>
             </div>
 			<nav role="navigation" class="navbar-inner">
 				<div class="navbar-wrap">
@@ -55,13 +62,13 @@ echo $OUTPUT->doctype() ?>
 						<span class="icon-bar"></span>
 					</a>
 					<div class="nav-collapse collapse">
+						<div id="tabs">
+							<?php echo $OUTPUT->custom_menu(); ?>
+						</div>
 						<ul class="nav pull-right">
 							<li><?php echo $OUTPUT->page_heading_menu(); ?></li>
 							<li class="navbar-text"><?php echo $OUTPUT->login_info() ?></li>
 						</ul>
-						<div id="tabs">
-							<?php echo $OUTPUT->custom_menu(); ?>
-						</div>
 					</div>
 				</div>
 			</nav>
@@ -98,7 +105,7 @@ echo $OUTPUT->doctype() ?>
                 </div>
                 <div class="row-fluid">
                     <section id="region-main" class="span9<?php if ($left) { echo ' pull-right'; } ?>">
-                        <?php
+						<?php
                         echo $OUTPUT->course_content_header();
                         echo $OUTPUT->main_content();
                         echo $OUTPUT->course_content_footer();
@@ -120,21 +127,21 @@ echo $OUTPUT->doctype() ?>
         <div class="container">
             <footer id="page-footer">
                 <div id="footer-info">
-                    <img src="<?php echo $OUTPUT->pix_url('logo2', 'theme'); ?>" alt="Pediatric Logo">
-                    <ul>
-                        <li class="info-name"><strong>Pediatric Essentials</strong></li>
-                        <li>123 First Street, New York, NY 10003 USA</li>
-                        <li>Tel: <strong>123-456-7890</strong> | Email: <a href="#">info@youremail.com</a></li>
-                    </ul>
-                </div>
+                    <img src="<?php echo $OUTPUT->pix_url('logo2', 'theme'); ?>" alt="MABTS Logo">
+					<div id="contact-info">
+						<strong>Mid-America Baptist Theological Seminary</strong><br />
+						2095 Appling Road, Cordova, Tennessee 38016, United States<br />
+						Phone: <strong>901-751-8453</strong> | Toll: <strong>800-968-4508</strong> | Email: <a href="#">info@mabts.edu</a>
+					</div>
+				</div>
             </footer>
         </div>
     </div>
 
     <footer id="page-footer2">
         <div class="footer-content container">
-            <span id="copyright">&copy; Copyright 2014 Pediatric Essentials. All Rights Reserved.</span>
-            <?php echo $OUTPUT->login_info() ?>
+            <span id="copyright">&copy; Copyright 2014 Mid-America Baptist Theological Seminary. All Rights Reserved.</span>
+            <span id="login-bottom"><?php echo $OUTPUT->login_info() ?></span>
         </div>
     </footer>
 
